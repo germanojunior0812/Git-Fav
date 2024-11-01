@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitFav</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+ <script src="./main.js" type="module" defer></script>
+</head>
+<body>
+  <div id="app">
+
+    <header>
+        <span>
+          <img src="./assets/Gitfav.svg" alt="">
+        </span>
+        
+          <div class="search">
+             <input id="input-search" type="text" placeholder="Digite o Github username que quer favoritar">
+               <button> 
+                  <img src="./assets/star.svg" alt="">
+                     Favoritar
+            </button>
+          </div>
+    </header>
+
+
+    <table>
+
+          <thead>
+            <tr>
+              <th>Usuário</th>
+              <th>Repositories</th>
+              <th>Followers</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            
+
+        
+            <tr>
+              <td class="user">
+                <img src="https://github.com/luizhenrrique.png" alt="">
+                <a href="https://github.com/luizhenrrique" target="_blank">
+                  <p>luiz henrrique</p>
+                  <span>luizhenrrique</span>
+                </a>
+              </td>
+              <td class="repositories">00</td>
+              <td class="Followers">1m</td>
+              <td><button class="remove">remover</button></td>
+            </tr>
+
+            <tr>
+              <td class="user">
+                <img src="https://github.com/edcarlos.png" alt="">
+                <a href="https://github.com/edcarlos" target="_blank">
+                  <p>ed carlos</p>
+                  <span>edcarlos</span>
+                </a>
+              </td>
+              <td class="repositories">00</td>
+              <td class="Followers">1m</td>
+              <td><button class="remove">remover</button></td>
+            </tr>
+
+            <tr>
+              <td class="user">
+                <img src="https://github.com/lucas.png" alt="">
+                <a href="https://github.com/lucas" target="_blank">
+                  <p>lucas silva</p>
+                  <span>lucas</span>
+                </a>
+              </td>
+              <td class="repositories">00</td>
+              <td class="Followers">1m</td>
+              <td><button >remover</button></td>
+            </tr>
+          </tbody>
+          
+    </table>
+
+
+  </div>
+</body>
+</html>
