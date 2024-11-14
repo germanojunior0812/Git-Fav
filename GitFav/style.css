@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #000;
+}
+
+:root {
+  font-size: 62.5%;
+  --background-button: #065E7C;
+  --color-button: #ffff;
+  --primary-color: #092D38;
+  --color-header: #E1E1E6;
+  --color-p:#E1E1E6;
+  --color-button2:#065E7C;
+}
+
+#app {
+  padding: 2rem;
+  max-width: 800px; /* Largura maior para o app */
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* Distribui espaço entre logo e barra de busca */
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  
+}
+
+span img {
+  margin-right: 15rem;
+  width: 15.6rem;
+  height: 3.2rem;
+  gap:2.0px;
+  color: var(--color-button);
+}
+
+
+
+
+.search button:hover img {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(82%) saturate(2166%) hue-rotate(172deg) brightness(93%) contrast(87%);
+  transition: filter 0.3s ease;
+}
+.search {
+  display: flex;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.search input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: 5px;
+  background: #06181C;
+  color: var(--color-button);
+  border: none;
+}
+
+.search button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.2rem 3.2rem;
+  border-radius: 0.5rem;
+  background: var(--background-button);
+  border: none;
+  font-size: 1.4rem;
+  color: var(--color-button);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.search button:hover {
+  transform: translateY(-2px);
+  background-color: var(--color-button);
+  color: var(--color-button2);
+  
+}
+
+table {
+  width: 100%; /* Define largura da tabela */
+  border-collapse: collapse;
+  background: var(--primary-color);
+  overflow: hidden;
+  border-radius: 8px 8px
+}
+
+table * {
+  font-size: 1.4rem;
+}
+
+table th, table td {
+  padding: 1.6rem;
+  text-align: left;
+  color: var(--color-header);
+}
+
+table th {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 1.6rem;
+  background: #092D38;
+}
+
+table td {
+  padding: 1.6rem;
+  text-align: left;
+}
+ table tr:nth-child(odd) {
+  background: #06161b;
+ }
+
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td button {
+  border:none;
+  background-color: transparent;
+  
+
+  color: red;   /* Mantém a cor do texto do botão */
+  cursor: pointer;
+}
+
+td.user {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+td.user a{
+  text-decoration: none;
+  
+
+}
+td.user a p {
+  font-weight: bold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--color-p);
+}
+td.user span {
+  font-size: 1.3rem;
+font-style: normal;
+font-weight: 400;
+color: var(--color-p);
+}
+
